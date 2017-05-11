@@ -4,9 +4,8 @@ set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -Wextra" )
 set( CMAKE_BUILD_TYPE Debug )
 
 find_package( PkgConfig REQUIRED )
-pkg_check_modules( PKG REQUIRED gtkmm-2.4 cpputest )
+pkg_check_modules( PKG REQUIRED gtkmm-2.4 cpputest libglog )
 include_directories( ${PKG_INCLUDE_DIRS} )
-
 
 add_executable( main_test.out src/main_test.cpp 
   
