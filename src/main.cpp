@@ -10,5 +10,5 @@ google::InitGoogleLogging("log_chifoumi");
    
    LOG(INFO)  << "test222*******";
 
-  return 0;
+  return 0;   
 }
