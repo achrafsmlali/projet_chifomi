@@ -1,7 +1,9 @@
 #include "Game.hpp"
-
+#include "Random.hpp"
 void Game::play(std::string move){
-  _last_Ai_Move="rock";//IA_rondom
+  //const char *vinit[] = {"rock", "paper", "scissors"};
+  //Random rng;
+   _last_Ai_Move="rock";//vinit[rng(2)];//IA_rondom
   _last_result=move;
 }
 
