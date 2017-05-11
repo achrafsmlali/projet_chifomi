@@ -9,13 +9,15 @@ include_directories( ${PKG_INCLUDE_DIRS} )
 
 add_executable( main_test.out src/main_test.cpp
   src/Game.cpp
- src/Game_test.cpp
+  src/Game_test.cpp
+  src/Random.cpp
    )
 target_link_libraries( main_test.out ${PKG_LIBRARIES} )
 
 
 add_executable( main.out src/main.cpp 
-src/Game.cpp
+  src/Game.cpp
+  src/Random.cpp
  )
 target_link_libraries( main.out ${PKG_LIBRARIES} )
 

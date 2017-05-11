@@ -1,4 +1,4 @@
-#include <drunk_player/Random.hpp>
+#include "Random.hpp"
 
 Random::Random() : 
     _engine(std::random_device{}()),

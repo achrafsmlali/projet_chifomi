@@ -1,9 +1,9 @@
 #include "Game.hpp"
 #include "Random.hpp"
 void Game::play(std::string move){
-  //const char *vinit[] = {"rock", "paper", "scissors"};
-  //Random rng;
-   _last_Ai_Move="rock";//vinit[rng(2)];//IA_rondom
+  const char *vinit[] = {"rock", "paper", "scissors"};
+  Random rng;
+   _last_Ai_Move=vinit[rng(2)];//IA_rondom
   _last_result=move;
 }
 
@@ -20,11 +20,11 @@ std::string compte_Result(std::string move_IA,std::string move_user){
      (move_IA=="paper" and  move_user=="rock")
      or(move_IA=="scissors" and  move_user=="paper")
      or(move_IA=="rock" and  move_user=="scissors")
-     )return "ordi gagne";
+     )return "you lose";
   else{
-    if(move_IA== move_user)return "egalite";
+    if(move_IA== move_user)return "equality";
     else{
-      return "tu a gagne";
+      return "you win";
     }
   }
 

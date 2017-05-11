@@ -17,7 +17,7 @@ google::InitGoogleLogging("log_chifoumi");
   if (user_move=="quit")break;
   if (user_move!="rock" and user_move!="paper" and user_move!="scissors")continue;
   game.play(user_move);
-  std::cout<<compte_Result(game.get_AI_Move(), game.get_Last_Result())<<"***"<<std::endl;
+  std::cout<<compte_Result(game.get_AI_Move(), game.get_Last_Result())<<std::endl;
  }
 
  
