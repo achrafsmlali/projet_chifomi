@@ -19,12 +19,12 @@ google::InitGoogleLogging("log_chifoumi");
   game.play(user_move);
   std::cout<<compte_Result(game.get_AI_Move(), game.get_Last_Result())<<std::endl;
 
-  LOG(INFO) <<argv[1]<<";"<<compte_Result(game.get_AI_Move(), game.get_Last_Result())<<";"<<game.get_Last_Result()<<";"<<game.get_AI_Move()<<std::endl;
+  LOG(INFO) <<"play ; "<<argv[1]<<" ; "<<compte_Result(game.get_AI_Move(), game.get_Last_Result())<<" ; "<<game.get_Last_Result()<<" ; "<<game.get_AI_Move()<<std::endl;
   
  }
 
  
-   
+   system("run_format.sh");
   
 
   return 0;   
